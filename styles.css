@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0.5rem 1rem;
+    width: fit-content;
+    height: fit-content;
+    box-sizing:border-box;
+    border-radius: 5px;
+  }
+
+  .body{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-radius: 5px;
+  }
+
+  .header{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+
+  .header img{
+    height: 3rem;
+  }
+
+  .output{
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+  }
+
+.output button{
+  padding-top: 1rem;
+  display: none;
+  flex-direction: column;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.input{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+  h1{
+    text-wrap: nowrap;
+  }
+  
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-wrap: wrap;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
+#cars {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+}
+
+button{
+  cursor: pointer;
+  height: 2rem;
+}

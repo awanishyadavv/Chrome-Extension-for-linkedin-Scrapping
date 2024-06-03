@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LinkedIn Data Extractor</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+  <div class="body">
+    <div class="header">
+      <h1>LinkedIn Data Extractor</h1>
+      <img src="./Powered by Stayfari.png" alt="" />
+    </div>
+    <div class="output">
+      <pre id="output"></pre>
+      <button id="copyButton"><i class="fas fa-copy"></i></button>
+    </div>
+    <div class="bottom-buttons">
+      <button id="extractButton">Extract Data</button>
+    </div>
+    <div class="input">
+      <input type="email" placeholder="Enter Email" id="emailInput" class="email-input" required/>
+      <input type="text" placeholder="Change Current Company" id="companyInput" class="email-input"/>
+      <select id="categoryDropdown">
+        <option value="">Select One</option>
+        <option value="1. Businesses (India SMEs/Non-profits)">1. Businesses (India SMEs/Non-profits)</option>
+        <option value="2. Businesses (Foreign small cos owners/self employed - landscaping/cleaning services/startups/docs)">2. Businesses (Foreign small cos owners/self employed - landscaping/cleaning services/startups/docs)</option>
+        <option value="3. Businesses (Foreign Cos with India offices)">3. Businesses (Foreign Cos with India offices)</option>
+        <option value="4. Senior Managers/professionals/software/CFA (India)">4. Senior Managers/professionals/software/CFA (India)</option>
+        <option value="5. Senior Managers/professionals/software/CFA (EU, US, SE Asia)">5. Senior Managers/professionals/software/CFA (EU, US, SE Asia)</option>
+        <option value="6. Foreign visiting Univ profs/UN/delegations">6. Foreign visiting Univ profs/UN/delegations</option>
+        <option value="7. Foreign buyers for handicrafts/creatives in RJ">7. Foreign buyers for handicrafts/creatives in RJ</option>
+        <option value="8. Domestic functions/seminars/delgations at colleges/univs">8. Domestic functions/seminars/delgations at colleges/univs)</option>
+        <option value="9. Expats (WOSs and JVs)">9. Expats (WOSs and JVs)</option>
+        <option value="10. UHNI">10. UHNI</option>
+        <option value="11. Travel Agent">11. Travel Agent</option>
+      </select>
+      <select id="purposeDropdown">
+        <option value="">Select One</option>
+        <option value="1. Vacation">1. Vacation</option>
+        <option value="2. Business">2. Business</option>
+      </select>
+    </div>
+    <div>
+      <button id="saveButton">Save Data</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "LinkedIn Data Extractor",
+    "version": "1.0",
+    "description": "Extracts profile data from LinkedIn pages.",
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.linkedin.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
